@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(44, 43, 43);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  box-sizing: border-box;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
+  padding: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-left: 5px orange solid;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+form {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  padding: 10px 0 10px 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  width: 60%;
+}
+button {
+  padding: 10px 20px;
+  width: 20%;
+  border-radius: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: rgb(251, 185, 64);
+}
+button:hover {
+  background-color: orange;
+}
+.poem-container {
+  margin-top: 20px;
+  height: max-content;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  border-left: 5px orange solid;
+  border-radius: 10px;
+  padding: 20px 0 20px 5px;
+}
+.hidden {
+  display: none;
+}
+small {
+  margin-left: 10px;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: fade 1000ms infinite;
+  -webkit-animation: fade 1000ms infinite;
+}
+a {
+  color: rgb(251, 185, 64);
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #dcdbdb;
+}
